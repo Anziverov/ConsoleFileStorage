@@ -1,6 +1,6 @@
 # ConsoleFileStorage
 Console file storage godel study task 
-For now you can login only via CLI, later it will be able to logi via console params
+You can login via CLR or via initial params([login] [password])
 Login		Password
 User1		Password1
 User2		Password2

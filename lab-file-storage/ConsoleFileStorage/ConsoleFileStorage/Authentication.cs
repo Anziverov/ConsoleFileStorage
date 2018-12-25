@@ -12,14 +12,19 @@ namespace ConsoleFileStorage
     {
         static string login;
         static string password;
-        static public void GetCredentials()
+        public static void GetCredentials(string sLogin, string sPassword)
+        {
+            login = sLogin;
+            password = sPassword;
+        }
+        public static void GetCredentials()
         {
             Console.WriteLine("Login?");
             login = Console.ReadLine();
             Console.WriteLine("Password?");
             password = Console.ReadLine();
         }
-        static public string GetAccess()
+        public static string GetAccess()
         {
             if(password == ConfigurationManager.AppSettings.Get(login))
             {

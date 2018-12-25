@@ -10,11 +10,28 @@ namespace ConsoleFileStorage
     {
         static void Main(string[] args)
         {
-            Authentication.GetCredentials();
-            if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
+           
+            if(args.Length == 0)
             {
-                CLIListener.StartListen();
+                Authentication.GetCredentials();
+                if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
+                {
+                    CLIListener.StartListen();
+                }
             }
+            else if(args.Length == 2)
+            {
+                Authentication.GetCredentials(args[0], args[1]);
+                if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
+                {
+                    CLIListener.StartListen();
+                }
+            }
+            else
+            {
+                Console.WriteLine(args.Length + " arguments is incorrect number of initial arguments! Must be [login] [password]");
+            }
+            
 
         }
        

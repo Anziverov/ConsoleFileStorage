@@ -41,6 +41,10 @@ namespace ConsoleFileStorage
             {
                 GetUserInfo();
             }
+            else if(currentCommand == "exit")
+            {
+                //some realsing here
+            }
             else
             {
                 Console.WriteLine("Wrong command");
