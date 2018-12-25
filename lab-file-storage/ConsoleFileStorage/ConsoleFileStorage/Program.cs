@@ -10,6 +10,13 @@ namespace ConsoleFileStorage
     {
         static void Main(string[] args)
         {
+            Authentication.GetCredentials();
+            if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
+            {
+                CLIListener.StartListen();
+            }
+
         }
+       
     }
 }

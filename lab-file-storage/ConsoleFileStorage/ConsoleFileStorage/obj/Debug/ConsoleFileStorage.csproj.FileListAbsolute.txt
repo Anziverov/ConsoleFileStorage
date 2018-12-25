@@ -1,0 +1,7 @@
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\bin\Debug\ConsoleFileStorage.exe.config
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\bin\Debug\ConsoleFileStorage.exe
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\bin\Debug\ConsoleFileStorage.pdb
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\obj\Debug\ConsoleFileStorage.csprojAssemblyReference.cache
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\obj\Debug\ConsoleFileStorage.csproj.CoreCompileInputs.cache
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\obj\Debug\ConsoleFileStorage.exe
+E:\StudyGodel\git-project\lab-02\lab-file-storage\ConsoleFileStorage\ConsoleFileStorage\obj\Debug\ConsoleFileStorage.pdb
