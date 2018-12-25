@@ -1,3 +1,6 @@
 # ConsoleFileStorage
 Console file storage godel study task 
-Here will be a detailed discription would you need to do to launch this app
+You can login via CLR or via initial params([login] [password])
+Login		Password
+User1		Password1
+User2		Password2
