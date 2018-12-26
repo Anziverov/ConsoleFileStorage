@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Configuration;
+using System.Collections.Specialized;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +12,16 @@ namespace ConsoleFileStorage
     {
         static void Main(string[] args)
         {
-           
-            if(args.Length == 0)
+            #region experimental
+            MetaInformationKeeper metaInformationKeeper;
+            #endregion
+            if (args.Length == 0)
             {
                 Authentication.GetCredentials();
                 if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
                 {
+                    metaInformationKeeper = new MetaInformationKeeper(ConfigurationManager.AppSettings.Get("pathToMeta"));
+                    metaInformationKeeper.UploadFile(@"E:\\testFile.txt");
                     CLIListener.StartListen();
                 }
             }
@@ -24,6 +30,7 @@ namespace ConsoleFileStorage
                 Authentication.GetCredentials(args[0], args[1]);
                 if (CLIListener.RegisterCurrentUser(Authentication.GetAccess()))
                 {
+                    metaInformationKeeper = new MetaInformationKeeper(ConfigurationManager.AppSettings.Get("pathToMeta"));
                     CLIListener.StartListen();
                 }
             }

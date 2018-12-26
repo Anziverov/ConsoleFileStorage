@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Authentication.cs" />
     <Compile Include="CLIListener.cs" />
+    <Compile Include="FileRepresent.cs" />
+    <Compile Include="MetaInformationKeeper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
